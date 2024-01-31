@@ -31,7 +31,9 @@ export default function Chat() {
   function connectToWS() {
     const { token } = JSON.parse(localStorage.getItem("Chat-Room") || "");
 
-    const ws = new WebSocket(`ws://localhost:8080?token=${token}`);
+    const ws = new WebSocket(
+      `wss://chat-room-api-v1.onrender.com?token=${token}`
+    );
     setWs(ws);
 
     ws.addEventListener("message", handleMessage);

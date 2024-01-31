@@ -1,3 +1,3 @@
-export const url = "http://localhost:8080/api/v1";
+export const url = "https://chat-room-api-v1.onrender.com/api/v1";
 
-export const baseUrl = "http://localhost:8080";
+export const baseUrl = "https://chat-room-api-v1.onrender.com";
